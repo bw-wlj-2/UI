@@ -1,0 +1,72 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #303030;
+    @media @tablet {
+        padding: 20% 5%;
+    }
+    @media @phone {
+        padding: 20% 0%;
+    }
+
+    .header-left {
+        width: 25%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-one {
+            @media @tablet {
+                display: none;
+            }
+        }
+
+        .icon-two {
+            display: none;
+            @media @tablet {
+                display: block;
+            }
+            @media @phone {
+                display: none;
+            }
+        }
+
+        .icon-three {
+            display: none;
+            @media @phone {
+                display: block;
+            }
+        }
+        
+    }
+
+    .header-right {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            color: #E2FFCE;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 29px;
+            letter-spacing: .01em;
+            font-weight: 50;
+            color: #898E88;
+        }
+
+        .button-top {
+            .button();
+        }
+    }
+
+}
